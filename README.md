@@ -57,9 +57,8 @@ Ce projet a été réalisé seul, avec un sprint_plan.md détaillé :
 
 ## 🔐 Sécurité
 
-- La clé API sera déplacée dans un .env pour éviter toute exposition
-- Aucun mot de passe ou donnée sensible n’est présent dans le dépôt
-- Fichiers sensibles sont ignorés du versionnement
+- Pour cette version locale, la clé API est visible dans le code JavaScript.
+- Dans un projet final ou public, elle serait déplacée dans un fichier `.env` ou gérée côté serveur.
 
 ---
 
