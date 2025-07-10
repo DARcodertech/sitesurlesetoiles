@@ -36,3 +36,50 @@ button {
   font-size: 14px;
   border: 1px solid #555;
 }
+
+#search-location {
+  padding: 8px;
+  font-size: 1rem;
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+#search-location {
+  padding: 10px;
+  font-size: 1rem;
+  width: 250px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #555;
+}
+
+#search-container {
+  position: relative;
+  z-index: 10;
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#suggestions {
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  max-height: 150px;
+  overflow-y: auto;
+  width: 250px;
+  position: absolute;
+  z-index: 11;
+  top: 75px; 
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#suggestions div {
+  padding: 8px;
+  cursor: pointer;
+}
+
+#suggestions div:hover {
+  background-color: #eee;
+}

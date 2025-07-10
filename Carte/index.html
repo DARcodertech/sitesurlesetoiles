@@ -7,14 +7,23 @@
 </head>
 <body>
   <h1>Ma Carte du Ciel</h1>
+
+<div id="search-container">
+  <input type="text" id="search-location" placeholder="Entrez une ville ou un pays" autocomplete="off">
+  <div id="suggestions"></div>
   <button id="btn">Voir les infos célestes</button>
-  <canvas id="sky" width="800" height="600"></canvas>
-  <div id="fiche" style="display: none;">
-  <h2 id="fiche-nom"></h2>
-  <p><strong>Type :</strong> <span id="fiche-type"></span></p>
-  <p><strong>Planètes :</strong> <span id="fiche-planetes"></span></p>
-  <p><strong>Description :</strong> <span id="fiche-description"></span></p>
 </div>
+
+
+  <canvas id="sky" width="800" height="600"></canvas>
+
+  <div id="fiche" style="display: none;">
+    <h2 id="fiche-nom"></h2>
+    <p><strong>Type :</strong> <span id="fiche-type"></span></p>
+    <p><strong>Planètes :</strong> <span id="fiche-planetes"></span></p>
+    <p><strong>Description :</strong> <span id="fiche-description"></span></p>
+  </div>
+
   <p id="info">En attente...</p>
 
   <script type="module" src="js/app.js"></script>
