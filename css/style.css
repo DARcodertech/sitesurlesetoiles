@@ -83,3 +83,75 @@ button {
 #suggestions div:hover {
   background-color: #eee;
 }
+
+header.intro {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #111;
+}
+
+.intro img.cover {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.intro nav a {
+  margin: 0 10px;
+  color: lightblue;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.intro a.main-button button {
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+section#fonctionnalites {
+  padding: 60px 20px;
+  background-color: #000;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.feature-box {
+  max-width: 300px;
+}
+
+.feature-box img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+section#apropos {
+  padding: 60px 20px;
+  background-color: #111;
+}
+
+#apropos p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+#apropos ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#apropos li a {
+  color: lightblue;
+  text-decoration: none;
+}

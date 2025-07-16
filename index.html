@@ -6,14 +6,25 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Site Sur Les Etoile</h1>
 
-<div id="search-container">
-  <input type="text" id="search-location" placeholder="Entrez une ville ou un pays" autocomplete="off">
-  <div id="suggestions"></div>
-  <button id="btn">Voir les infos célestes</button>
-</div>
+  <header class="intro">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/NASA-Hubble-Deep-Field.jpg/640px-NASA-Hubble-Deep-Field.jpg" alt="Image de couverture" class="cover">
+    <h1>Carte du Ciel</h1>
+    <p>Une application interactive pour explorer les étoiles en temps réel avec géolocalisation et données célestes.</p>
+    <nav>
+      <a href="#apropos">À propos</a>
+      <a href="#fonctionnalites">Fonctionnalités</a>
+    </nav>
+    <a href="https://darcodertech.github.io/sitesurlesetoiles/" target="_blank" class="main-button">
+      <button>Lancer l'application</button>
+    </a>
+  </header>
 
+  <div id="search-container">
+    <input type="text" id="search-location" placeholder="Entrez une ville ou un pays" autocomplete="off">
+    <div id="suggestions"></div>
+    <button id="btn">Voir les infos célestes</button>
+  </div>
 
   <canvas id="sky" width="800" height="600"></canvas>
 
@@ -25,6 +36,41 @@
   </div>
 
   <p id="info">En attente...</p>
+
+  <section id="fonctionnalites">
+    <h2>Fonctionnalités</h2>
+    <div class="features">
+      <div class="feature-box">
+        <h3> Ciel étoilé animé</h3>
+        <img src="captures/ciel-etoile.png" alt="Ciel étoilé">
+        <p>Affichage d’un ciel dynamique avec scintillement et noms des étoiles.</p>
+      </div>
+      <div class="feature-box">
+        <h3> Fiches interactives</h3>
+        <img src="captures/fiche-etoile.png" alt="Fiche étoile">
+        <p>Cliquer sur une étoile affiche sa fiche d’identité : type, planètes, description.</p>
+      </div>
+      <div class="feature-box">
+        <h3> Géolocalisation + API</h3>
+        <img src="captures/api-soleil.png" alt="Infos célestes">
+        <p>Utilise ta position ou une ville saisie pour afficher lever/coucher du Soleil.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="apropos">
+    <h2>À propos</h2>
+    <p>
+      Ce projet est né de ma curiosité pour l’astronomie et l’envie de rendre les étoiles interactives.
+      Il a été réalisé en solo dans le cadre de ma formation à 
+      <a href="https://www.holbertonschool.com/" target="_blank">Holberton</a>.
+    </p>
+    <p> Développé par : <strong>Ewan</strong></p>
+    <ul>
+      <li><a href="https://github.com/DARcodertech" target="_blank">GitHub</a></li>
+      <li><a href="https://github.com/DARcodertech/carte-du-ciel" target="_blank">Dépôt GitHub du projet</a></li>
+    </ul>
+  </section>
 
   <script type="module" src="js/app.js"></script>
 </body>
